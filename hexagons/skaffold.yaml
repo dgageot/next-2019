@@ -1,0 +1,22 @@
+apiVersion: skaffold/v1beta7
+kind: Config
+
+build:
+  artifacts:
+  - image: gcr.io/dga-demo/proxy
+    context: ./gaming-proxy
+  - image: gcr.io/dga-demo/ref
+    context: ./ref
+  - image: gcr.io/dga-demo/game
+    context: ./game
+  - image: gcr.io/dga-demo/db
+    context: ./db
+  - image: gcr.io/dga-demo/ui
+    context: ./ui
+    sync:
+      public/*: /app/public
+
+deploy:
+  kubectl:
+    manifests:
+      - k8s/*.yaml

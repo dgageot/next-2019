@@ -1,0 +1,234 @@
+<h1>Google Container Tools</h1>
+<img class="k8s" src="/images/kubernetes.png"/>
+<img class="gcp" src="/images/gcp.png"/>
+
+<ul>
+    <li>
+        <img class="social" src="/images/twitter.svg" />
+        <img class="social" src="/images/github.svg" />
+        <img class="social" src="/images/instagram.svg" />
+    </li>
+    <li>@dgageot</li>
+</ul>
+
+<style>
+    h1 {
+        font-size: 5rem;
+    }
+
+    img.k8s {
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        width: 200px;
+    }
+
+    img.gcp {
+        position: absolute;
+        bottom: 30px;
+        left: 350px;
+        width: 210px;
+    }
+
+    li {
+        margin: 10px 0;
+        text-align: right;
+    }
+
+    ul {
+        margin-top: 250px;
+    }
+
+    img.social {
+        display: inline-block;
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        vertical-align: middle;
+    }
+</style>
+
+---
+
+<h1>Developer Tools for Kubernetes</h1>
+<img src="/images/fine.png"/>
+
+<style>
+    body {
+        background-image: none;
+        background-color: rgb(51, 51, 51);
+    }
+    img {
+        max-width: 80%;
+        max-height: 80%;
+        margin-top: 80px;
+    }
+</style>
+
+---
+
+<h1>Deploy code to Kubernetes</h1>
+<div class="split">
+    <web-term path="{{ .WorkingDir }}/repeat"></web-term>
+    <source-code folder="{{ .WorkingDir }}/repeat"
+        files="main.go Dockerfile pod.yaml"
+        start-lines=";5;8"
+        end-lines=";5;8">
+    </source-code>
+</div>
+
+<style>
+    body {
+        background-image: none;
+        background-color: rgb(221, 221, 221);
+    }
+</style>
+
+---
+
+<h1>Infinite loop of Pain and Suffering</h1>
+<div id="left">
+    <img class="w" src="/images/cycle.svg"/>
+</div>
+<ul>
+    <li>Even <em>"Hello, World!"</em> is <em>complicated</em>...</li>
+</ul>
+
+<style>
+    #left {
+        width: 60%;
+    }
+    img {
+        margin-top: 30px;
+        margin-left: -60px;
+    }
+</style>
+
+---
+
+<h1>Skaffold to the rescue!</h1>
+<div id="left">
+    <img class="w" src="/images/skaffold.png"/>
+</div>
+<ul>
+    <li><em>Command line</em></strong></li>
+    <li><em>Iterative</em> development</li>
+    <li><em>Local</em> and <em>Remote</em> clusters</li>
+</ul>
+<img class="logo" src="/images/logos/skaffold.png"/>
+
+---
+
+<h1>Skaffold</h1>
+<div class="split">
+    <web-term path="{{ .WorkingDir }}/hello"></web-term>
+</div>
+<img class="logo" src="/images/logos/skaffold.png"/>
+
+<style>
+    body {
+        background-image: none;
+        background-color: rgb(221, 221, 221);
+    }
+</style>
+
+---
+
+<h1>Not just for <em>Hello World</em></h1>
+<div class="split">
+    <source-code folder="{{ .WorkingDir }}/hexagons"
+        files="skaffold.yaml k8s/ui.yaml k8s/game.yaml k8s/ref.yaml k8s/db.yaml"
+        start-lines=""
+        end-lines="">
+    </source-code>
+</div>
+<img class="logo" src="/images/logos/skaffold.png"/>
+
+<style>
+    body {
+        background-image: none;
+        background-color: rgb(221, 221, 221);
+    }
+</style>
+
+---
+ 
+<h1>Not just for <em>Hello World</em></h1>
+<div class="split">
+    <web-term path="{{ .WorkingDir }}/hexagons"></web-term>
+    <web-browser src="http://localhost:8080/"></web-browser>
+</div>
+<img class="logo" src="/images/logos/skaffold.png"/>
+
+<style>
+    body {
+        background-image: none;
+        background-color: rgb(221, 221, 221);
+    }
+</style>
+
+---
+
+<h1>Not just for <em>Hello World</em></h1>
+<img class="main" src="/images/hexagons.svg"/>
+<img class="logo" src="/images/logos/skaffold.png"/>
+
+<style>
+    body {
+        background-image: none;
+        background-color: rgb(221, 221, 221);
+    }
+
+    img.main {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+
+---
+
+<h1>That's <em>Skaffold!</em></h1>
+<img class="main" src="/images/plugins.svg">
+<img class="logo" src="/images/logos/skaffold.png"/>
+
+<style>
+    body {
+        background-image: none;
+        background-color: rgb(221, 221, 221);
+    }
+
+    img.main {
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: 80px;
+    }
+</style>
+    
+---
+
+<h1>Thank You!</h1>
+<ul>
+    <li>Q&As</li>
+    <li>&nbsp;</li>
+    <li>
+        <img src="/images/twitter.svg" />
+        <img src="/images/github.svg" />
+        <img src="/images/instagram.svg" />
+    </li>
+    <li><em>@dgageot</em></li>
+</ul>
+
+<style>
+    li {
+        margin: 10px 0;
+    }
+    img {
+        display: inline-block;
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        vertical-align: middle;
+    }
+</style>

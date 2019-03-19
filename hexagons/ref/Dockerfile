@@ -1,0 +1,11 @@
+FROM gcr.io/cloud-builders/go:debian as builder
+WORKDIR /usr/local/go/src/github.com/dgageot/hexagons/
+COPY vendor vendor
+RUN find vendor -maxdepth 2 -mindepth 2 -type d -exec sh -c 'go install -i github.com/dgageot/hexagons/{}/... || true' \;
+COPY main.go types.go ./
+RUN go build -o /ref .
+
+FROM gcr.io/distroless/base
+EXPOSE 8888
+ENTRYPOINT ["/ref"]
+COPY --from=builder /ref /
