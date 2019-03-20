@@ -432,10 +432,10 @@ iframe {
 
 .browser .browser-navigation-bar a {
     position: absolute;
-    top: 5px;
+    top: 4px;
     right: 10px;
-    color: lightgray;
-    font-size: 1.5em;
+    color: #AAAAAA;
+    font-size: 1.2em;
     text-decoration: none;
 }
     
