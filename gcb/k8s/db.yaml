@@ -23,5 +23,5 @@ spec:
     spec:
       containers:
       - name: db
-        image: gcr.io/dga-demo/db
+        image: gcr.io/next19/db
 

@@ -4,7 +4,7 @@ docker run --rm -it hello:v1
 vi pod.yaml
 kubectl apply -f pod.yaml
 kubectl logs -f hello
-kctx gke_dga-demo_europe-west1-b_bbl
+kctx gke_next19_us-west2-a_demo
 kctx docker-for-desktop
 kubectl get pods
 skaffold run --tail

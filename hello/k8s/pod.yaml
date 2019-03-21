@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: hello
-    image: gcr.io/dga-demo/hello
+    image: gcr.io/next19/hello

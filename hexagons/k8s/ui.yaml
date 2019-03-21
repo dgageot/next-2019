@@ -25,9 +25,9 @@ spec:
     spec:
       containers:
       - name: proxy
-        image: gcr.io/dga-demo/proxy
+        image: gcr.io/next19/proxy
       - name: ui
-        image: gcr.io/dga-demo/ui
+        image: gcr.io/next19/ui
         ports:
         - containerPort: 8080
         - containerPort: 35729

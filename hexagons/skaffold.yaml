@@ -3,15 +3,15 @@ kind: Config
 
 build:
   artifacts:
-  - image: gcr.io/dga-demo/proxy
+  - image: gcr.io/next19/proxy
     context: ./gaming-proxy
-  - image: gcr.io/dga-demo/ref
+  - image: gcr.io/next19/ref
     context: ./ref
-  - image: gcr.io/dga-demo/game
+  - image: gcr.io/next19/game
     context: ./game
-  - image: gcr.io/dga-demo/db
+  - image: gcr.io/next19/db
     context: ./db
-  - image: gcr.io/dga-demo/ui
+  - image: gcr.io/next19/ui
     context: ./ui
     sync:
       public/*: /app/public
