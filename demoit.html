@@ -76,7 +76,7 @@
 <img id="left" src="/images/cycle.svg"/>
 
 <div id="description">
-    <h1>Even<br/><em>"Hello, World!"</em><br>is <em>complicated</em>...</h1>
+    <h1>Even<br/><em>"Hello, World!"</em><br/>is <em>complicated</em>...</h1>
 </div>
 
 ---
@@ -87,10 +87,58 @@
 <img id="snapshot" src="/images/skaffold.png"/>
 
 <div id="description">
-    <h1><em>Command line</em></h1>
-    <h1><em>Iterative</em> development</h1>
+    <h1>Command line</h1>
+    <h1><em>Iterative</em><br/>development</h1>
     <h1><em>Local</em> and <em>Remote</em> clusters</h1>
 </div>
+
+---
+
+<h1 class="demo">Skaffold</h1>
+<img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
+
+<div class="split">
+    <web-term path="{{ .WorkingDir }}/hello"></web-term>
+</div>
+
+---
+
+<h1 class="demo">Not just for Hello World</h1>
+<img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
+
+<div class="split">
+    <source-code folder="{{ .WorkingDir }}/hexagons"
+        files="skaffold.yaml k8s/ui.yaml k8s/game.yaml k8s/ref.yaml k8s/db.yaml"
+        start-lines=""
+        end-lines="">
+    </source-code>
+</div>
+
+---
+ 
+<h1 class="demo">Not just for Hello World</h1>
+<img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
+
+<div class="split">
+    <web-term path="{{ .WorkingDir }}/hexagons"></web-term>
+    <web-browser src="http://localhost:8080/"></web-browser>
+</div>
+
+---
+
+<h1 class="demo">Not just for Hello World</h1>
+<img id="google-cloud-full" src="/images/google-cloud-full.png" />
+
+<img id="back" src="/images/back.svg">
+<img id="center" src="/images/hexagons.svg"/>
+
+---
+
+<h1 class="demo">That's Skaffold!</h1>
+<img id="google-cloud-full" src="/images/google-cloud-full.png" />
+
+<img id="back" src="/images/back.svg">
+<img id="center" src="/images/plugins.svg">
 
 ---
 
@@ -99,6 +147,38 @@
 
 <div id="title">
     <h1>Build on the<br/>Cloud</h1>
+</div>
+
+---
+
+<h1 class="demo">Cloud Build</h1>
+<img id="google-cloud-full" src="/images/google-cloud-full.png" />
+
+<div id="title">
+    <h1>TODO: presentation</h1>
+</div>
+
+---
+
+<h1 class="demo">Cloud Build</h1>
+<img id="google-cloud-full" src="/images/google-cloud-full.png" />
+
+<div id="title">
+    <h1>TODO: cloudbuild.yaml sample</h1>
+</div>
+    
+---
+
+<h1 class="demo">Cloud Build with Skaffold</h1>
+<img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
+
+<div class="split">
+    <web-term path="{{ .WorkingDir }}/gcb"></web-term>
+    <source-code folder="{{ .WorkingDir }}/gcb"
+        files="skaffold.yaml"
+        start-lines=""
+        end-lines="">
+    </source-code>
 </div>
 
 ---
@@ -143,7 +223,7 @@
 
 <div id="title">
     <h1>Thank you!</h1>
-    <h2>Google Cloud Next 2019</h2>
+    <h2>Google_logo Cloud Next 2019</h2>
     <h3 class="space">David Gageot</h3>
     <h3><a href="dgageot@google.com">dgageot@google.com</a></h3>
     <h3 class="space">Priya Wadhwa</h3>
@@ -157,118 +237,3 @@
     <h2 class="space">Title to be detemined</h2>
     <h3>April 10th @ 11:00 AM</h3>
 </div>
-
----
-
-<h1>Skaffold</h1>
-<div class="split">
-    <web-term path="{{ .WorkingDir }}/hello"></web-term>
-</div>
-<img class="logo" src="/images/logos/skaffold.png"/>
-
-<style>
-    body {
-        background-image: none;
-        background-color: rgb(221, 221, 221);
-    }
-</style>
-
----
-
-<h1>Not just for <em>Hello World</em></h1>
-<div class="split">
-    <source-code folder="{{ .WorkingDir }}/hexagons"
-        files="skaffold.yaml k8s/ui.yaml k8s/game.yaml k8s/ref.yaml k8s/db.yaml"
-        start-lines=""
-        end-lines="">
-    </source-code>
-</div>
-<img class="logo" src="/images/logos/skaffold.png"/>
-
-<style>
-    body {
-        background-image: none;
-        background-color: rgb(221, 221, 221);
-    }
-</style>
-
----
- 
-<h1>Not just for <em>Hello World</em></h1>
-<div class="split">
-    <web-term path="{{ .WorkingDir }}/hexagons"></web-term>
-    <web-browser src="http://localhost:8080/"></web-browser>
-</div>
-<img class="logo" src="/images/logos/skaffold.png"/>
-
-<style>
-    body {
-        background-image: none;
-        background-color: rgb(221, 221, 221);
-    }
-</style>
-
----
-
-<h1>Not just for <em>Hello World</em></h1>
-<img class="main" src="/images/hexagons.svg"/>
-<img class="logo" src="/images/logos/skaffold.png"/>
-
-<style>
-    body {
-        background-image: none;
-        background-color: rgb(221, 221, 221);
-    }
-
-    img.main {
-        max-width: 100%;
-        max-height: 100%;
-    }
-</style>
-
----
-
-<h1>That's <em>Skaffold!</em></h1>
-<img class="main" src="/images/plugins.svg">
-<img class="logo" src="/images/logos/skaffold.png"/>
-
-<style>
-    body {
-        background-image: none;
-        background-color: rgb(221, 221, 221);
-    }
-
-    img.main {
-        max-width: 100%;
-        max-height: 100%;
-        margin-top: 80px;
-    }
-</style>
-    
----
-
-<h1>Thank You!</h1>
-<ul>
-    <li>Q&As</li>
-    <li>&nbsp;</li>
-    <li>
-        <img src="/images/twitter.svg" />
-        <img src="/images/github.svg" />
-        <img src="/images/instagram.svg" />
-    </li>
-    <li><em>@dgageot</em></li>
-</ul>
-
-<style>
-    li {
-        margin: 10px 0;
-    }
-    img {
-        display: inline-block;
-        margin-right: 10px;
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        vertical-align: middle;
-    }
-</style>

@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Google+Sans:400,400i,500,500i,700,900');
+/* @import url('https://fonts.googleapis.com/css?family=Google+Sans:400,400i,500,500i,700,900'); */
+@import url('https://fonts.googleapis.com/css?family=Google+Sans:400,400i,500,500i,700,700i|Google+Sans+Display:400,400i,500,500i,700,700i&subset=all');
 
 html, body, #top {
     margin: 0;
     padding: 0;
     background-color: black;
 
-    --color-blue: rgb(67,115,229);
+    --color-black: rgb(32,32,35);
+    --color-gray: rgb(117,120,123);
+    --color-blue: rgb(66,133,244);
+    --color-red: rgb(219,68,55);
+    --color-yellow: rgb(244,180,0);
+    --color-green: rgb(15,157,88);
 }
 
 html {
@@ -14,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Google Sans',Helvetica,Arial,sans-serif;
+    font-family: 'Google Sans', Arial, sans-serif;
     color: rgb(61, 64, 67);
     display: flex;
     align-items: center;
@@ -37,6 +43,11 @@ body {
     left: 0;
     background-color: var(--color-blue);
     border-radius: 0 3px 3px 0;
+    opacity: .5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Google Sans Display', Arial, sans-serif;
 }
 
 h1 {
@@ -101,6 +112,7 @@ h2 em, h3 em {
 #description em {
     color: var(--color-blue);
     font-weight: 500;
+    font-style: normal;
 }
 
 #cloud {
@@ -160,10 +172,24 @@ h2 em, h3 em {
     left: 2vw;
 }
 
+#center {
+    position: absolute;
+    left: 15%;
+    height: 70%;
+}
+
+#back {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
 #snapshot {
     position: absolute;
-    height: 70%;
-    bottom: 8vh;
+    height: 75%;
+    bottom: 6vh;
     left: 2vw;
 }
 
@@ -201,7 +227,7 @@ h2 a, h3 a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(32, 32, 35);
+    background-color: var(--color-black);
     width: 100%;
     height: 100%;
     display: flex;
@@ -215,7 +241,7 @@ h2 a, h3 a {
 .split {
     display: flex;
     height: calc(100% - 11vw);
-    padding: 0 1vw;
+    padding: 0 2vw;
 }
 
 h1.demo {

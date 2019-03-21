@@ -9,3 +9,4 @@ kctx docker-for-desktop
 kubectl get pods
 skaffold run --tail
 skaffold init -f skaffold.yaml
+skaffold build -p cloud-build

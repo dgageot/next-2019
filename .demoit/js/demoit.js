@@ -39,7 +39,7 @@ customElements.define('source-code', class extends HTMLElement {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0.25em 0.9em -0.1em rgba(0,0,0,.3);
+    box-shadow: 0 0.25em 0.9em -0.1em rgba(0,0,0,.2);
     width: calc(100% - 10px);
     height: calc(100% - 40px);
     background-color: white;
@@ -105,7 +105,8 @@ customElements.define('source-code', class extends HTMLElement {
     text-align: left;
     color: #212121;
     padding: 2px 0;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .nt {
@@ -230,7 +231,7 @@ iframe {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0.25em 0.9em -0.1em rgba(0,0,0,.3);
+    box-shadow: 0 0.25em 0.9em -0.1em rgba(0,0,0,.2);
     width: calc(100% - 10px);
     height: calc(100% - 40px);
     background-color: white;
@@ -407,7 +408,7 @@ iframe {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0.25em 0.9em -0.1em rgba(0,0,0,.3);
+    box-shadow: 0 0.25em 0.9em -0.1em rgba(0,0,0,.2);
     width: calc(100% - 10px);
     height: calc(100% - 40px);
     background-color: rgb(11,40,50);
@@ -427,7 +428,6 @@ iframe {
     width: 100%;
     background: linear-gradient(to bottom, #edeaed 0%, #dddfdd 100%);
     border-bottom: 2px solid #cbcbcb;
-    border-radius: 0.4em 0.4em 0 0;
 }
 
 .browser .browser-navigation-bar a {
