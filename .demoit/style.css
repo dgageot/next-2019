@@ -36,16 +36,6 @@ body {
     flex-grow: 1;
 }
 
-#progression {
-    position: absolute;
-    height: 6px;
-    bottom: calc((100vh - (100vw * 9 / 16)) / 2);
-    left: 0;
-    background-color: var(--color-blue);
-    border-radius: 0 3px 3px 0;
-    opacity: .5;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Google Sans Display', Arial, sans-serif;
 }
@@ -218,6 +208,16 @@ h2 em, h3 em {
 
 #nav:hover a:not(.disabled) {
     visibility: visible;
+}
+
+#progression {
+    position: absolute;
+    height: 6px;
+    bottom: calc((100vh - (100vw * 9 / 16)) / 2);
+    left: 0;
+    background-color: black;
+    border-radius: 0 3px 3px 0;
+    opacity: .4;
 }
 
 h2 a, h3 a {
