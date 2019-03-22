@@ -152,7 +152,6 @@ h2 em, h3 em {
     height: calc(100% + 4px);
     top: -2px;
     right: -2px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 #left {
