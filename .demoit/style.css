@@ -240,6 +240,12 @@ h2 a, h3 a {
     width: 100%;
 }
 
+#main {
+    margin: 0 4vw;
+    padding: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 .split {
     display: flex;
     height: calc(100% - 11vw);
