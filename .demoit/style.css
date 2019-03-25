@@ -95,12 +95,17 @@ h2 em, h3 em {
     flex-direction: column;
 }
 
-#description h1, #description h2, #description h3 {
+#recap {
+    text-align: center;
+}
+
+#description h1, #description h2, #description h3,
+#recap h1, #recap h2, #recap h3 {
     font-weight: 400;
     margin: 20px;
 }
 
-#description em {
+#description em, #recap em {
     color: var(--color-blue);
     font-weight: 500;
     font-style: normal;
