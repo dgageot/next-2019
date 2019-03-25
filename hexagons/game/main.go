@@ -30,11 +30,6 @@ func game(w http.ResponseWriter, r *http.Request) {
 	}
 	count := info.Count
 
-	// nasty bug
-	//if 0 == rnd.Intn(2) {
-	//	count = 1
-	//}
-
 	randomGuess := rnd.Intn(count)
 	var guess Hexagon
 	if err := readJSON(fmt.Sprintf("/hexagon/%d", randomGuess), r.Header, &guess); err != nil {
