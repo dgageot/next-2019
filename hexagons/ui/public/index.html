@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 
-<body ng-app="quizz">
+<body ng-app="quizz" ng-controller="QuizzCtrl" ng-cloak>
   <div class="title">
-    GCP Quizz<br>
+    {{title}}!<br>
   </div>
 
-  <div class="quizz" ng-controller="QuizzCtrl" ng-cloak>
+  <div class="quizz">
     <div class="question">
       <h2>
         <span ng-if="flavor == 1">Find the logo for</span>

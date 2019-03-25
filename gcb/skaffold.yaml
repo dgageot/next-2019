@@ -11,6 +11,9 @@ build:
     context: ./game
   - image: gcr.io/next19/db
     context: ./db
+  - image: gcr.io/next19/title
+    context: ./title
+    jibGradle: {}
   - image: gcr.io/next19/ui
     context: ./ui
     sync:

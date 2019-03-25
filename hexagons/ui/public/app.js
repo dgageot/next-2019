@@ -3,6 +3,12 @@
 angular.module('quizz', [])
 
 .controller('QuizzCtrl', function($scope, $http) {
+  $http.get('/title').then(function(reponse) {
+    $scope.title = reponse.data;
+  }, function errorCallback(response) {
+    $scope.error = true
+  });
+
   $http.get('/game').then(function(reponse) {
     var game = reponse.data;
 
