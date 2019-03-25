@@ -1,3 +1,18 @@
+// Capture keydown events, and change slides accordingly
+document.addEventListener("keydown", event => {
+    switch (event.key) {
+        case "ArrowRight":
+        case " ":
+            window.location.href = NextURL;
+            break;
+        case "ArrowLeft":
+            window.location.href = PrevURL;
+            break;
+        default:
+            return;
+    }
+});
+
 // Maximize a "window".
 function maximize(w) {
     if (w.savedStyle != undefined) {
