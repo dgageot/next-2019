@@ -124,6 +124,10 @@ customElements.define('source-code', class extends HTMLElement {
     font-family: 'Roboto Mono', monospace;
 }
 
+pre.chroma {
+    tab-size: 4;
+}
+
 .nt {
     color: blue;
 }
