@@ -106,13 +106,20 @@
 <h1 class="demo">Not just for Hello World</h1>
 <img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
 
-<div class="split">
+<div class="code">
     <source-code folder="{{ .WorkingDir }}/hexagons"
         files="skaffold.yaml k8s/ui.yaml k8s/game.yaml k8s/ref.yaml k8s/db.yaml"
         start-lines=""
         end-lines="">
     </source-code>
 </div>
+
+<style>
+    .code {
+        width: 80%;
+        margin: 0 auto;
+    }
+</style>
 
 ---
  

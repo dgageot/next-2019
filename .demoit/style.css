@@ -261,7 +261,7 @@ h2 em, h3 em {
 #left {
     position: absolute;
     height: 70%;
-    bottom: 8vh;
+    bottom: 8.5vw;
     left: 2vw;
 }
 
@@ -282,8 +282,8 @@ h2 em, h3 em {
 
 #snapshot {
     position: absolute;
-    height: 75%;
-    bottom: 6vh;
+    height: 70%;
+    bottom: 8vw;
     left: 2vw;
 }
 
