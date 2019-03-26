@@ -120,12 +120,12 @@ customElements.define('source-code', class extends HTMLElement {
     text-align: left;
     color: #212121;
     padding: 2px 0;
-    font-size: 16px;
+    font-size: var(--source-code-font-size, 16px);
     font-family: 'Roboto Mono', monospace;
 }
 
 pre.chroma {
-    tab-size: 4;
+    tab-size: var(--source-code-tab-size, 4);
 }
 
 .nt {
@@ -499,44 +499,3 @@ iframe {
         this.addTab();
     }
 })
-
-customElements.define('code-pastie', class extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-    }
-
-    connectedCallback() {
-        let css = `<style>
-.chroma {
-    text-align: left;
-    overflow: hidden;
-}
-
-.hl {
-    background-color: var(--highlight-color, rgb(191, 214, 255)) !important;
-}
-
-.hl, .chroma {
-    padding: 0 10px;
-}
-
-.ln {
-    display: none;
-}
-</style>`
-
-        const folder = this.getAttribute('folder');
-        const file = this.getAttribute('file');
-        const theme = this.getAttribute('theme');
-        const startLine = this.getAttribute('start-line');
-        const endLine = this.getAttribute('end-line');
-
-        const xhr = new XMLHttpRequest();
-        xhr.addEventListener('load', () => {
-            this.shadowRoot.innerHTML = css + `<div>${xhr.response}</div>`;
-        });
-        xhr.open('GET', `/sourceCode/${folder}/${file}?style=${theme}&startLine=${startLine}&endLine=${endLine}`);
-        xhr.send();
-    }
-});
