@@ -389,3 +389,17 @@ em a {
     text-decoration: none;
     border-bottom: 1px dotted;
 }
+
+.social {
+    display: flex;
+    height: 2vw;
+}
+
+.social img {
+    height: 100%;
+    margin-right: .5vw;
+}
+
+.social a {
+    text-decoration: none;
+}
