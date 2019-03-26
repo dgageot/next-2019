@@ -348,7 +348,7 @@ h2 a, h3 a {
     color: white !important;
 }
 
-#black+#nav a {
+#black~#nav a {
     visibility: visible;
 }
 
