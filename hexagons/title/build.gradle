@@ -14,3 +14,9 @@ dependencies {
   compile "io.vertx:vertx-core:3.6.3"
   compile "io.vertx:vertx-web:3.6.3"
 }
+
+jib {
+  container {
+    jvmFlags = ["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005,quiet=y"]
+  }
+}
