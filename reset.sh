@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
+set -e
+
 export SKAFFOLD_CACHE_ARTIFACTS=true
+
+if [[ "$(git describe --tags --always)" != "v1" ]]; then
+    echo "The demo works best when the sources are tagged to v1"
+    exit 1
+fi
 
 cd repeat
 go build -o /dev/null main.go
