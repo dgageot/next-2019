@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cloudcode",
+            "language": "Java",
+            "request": "attach",
+            "debugPort": 5005,
+            "localRoot": "${workspaceFolder}",
+            "name": "Title - Debug",
+            "podSelector": {
+                "app": "title"
+            }
+        }
+    ]
+}
