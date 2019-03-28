@@ -1,5 +1,5 @@
 FROM golang:1.11.5-alpine3.9 as builder
-WORKDIR /usr/local/go/src/github.com/dgageot/hexagons/
+WORKDIR /usr/local/go/src/github.com/dgageot/hexagons-ref/
 COPY vendor vendor
 RUN find vendor -maxdepth 2 -mindepth 2 -type d -exec sh -c 'go install -i github.com/dgageot/hexagons/{}/... || true' \;
 COPY main.go types.go ./
