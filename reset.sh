@@ -16,6 +16,18 @@ kubectl get nodes
 kubectl get pods
 cd ..
 
+cd java
+./mvnw compile
+docker build . -t web
+cd ..
+
+cd jib
+./mvnw compile
+./mvnw compile jib:build -Dimage=gcr.io/dga-demo/hello-jib
+kctx docker-for-desktop
+skaffold build
+cd ..
+
 cd hello
 rm -f skaffold.yaml
 kctx docker-for-desktop

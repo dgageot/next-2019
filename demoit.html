@@ -106,6 +106,47 @@
 
 ---
 
+<h1 class="demo">But docker builds can be slow</h1>
+<img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
+
+<div class="split">
+    <web-term path="{{ .WorkingDir }}/java"></web-term>
+    <source-code folder="{{ .WorkingDir }}/java"
+        files="pom.xml Dockerfile src/main/java/hello/Hello.java"
+        start-lines=""
+        end-lines="">
+    </source-code>
+</div>
+
+---
+
+<h1 class="demo">Jib - Java Image Builder</h1>
+<img id="google-cloud-full" src="/images/google-cloud-full.png" />
+
+<img id="snapshot" src="/images/snapshots/jib.png"/>
+
+<div id="description">
+    <h1><em>Maven</em> and <em>Gradle</em> plugin</h1>
+    <h1>Builds Docker images <em>without</em> Docker</h1>
+    <h1>No <em>Dockerfile</em></h1>
+</div>
+
+---
+
+<h1 class="demo">Faster builds with Jib</h1>
+<img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
+
+<div class="split">
+    <web-term path="{{ .WorkingDir }}/jib"></web-term>
+    <source-code folder="{{ .WorkingDir }}/jib"
+        files="pom.xml src/main/java/hello/Hello.java skaffold.yaml"
+        start-lines=""
+        end-lines="">
+    </source-code>
+</div>
+
+---
+
 <h1 class="demo">Not just for Hello World</h1>
 <img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
 
@@ -143,19 +184,6 @@
 <img id="center" src="/images/hexagons.svg"/>
 
 <script src="/js/draw.js"></script>
-
----
-
-<h1 class="demo">Jib - Java Image Builder</h1>
-<img id="google-cloud-full" src="/images/google-cloud-full.png" />
-
-<img id="snapshot" src="/images/snapshots/jib.png"/>
-
-<div id="description">
-    <h1><em>Maven</em> and <em>Gradle</em> plugin</h1>
-    <h1>Builds Docker images <em>without</em> Docker</h1>
-    <h1>No <em>Dockerfile</em></h1>
-</div>
 
 ---
 
@@ -333,13 +361,13 @@
 
 ---
 
-<h1 class="demo">Develop Faster</h1>
+<h1 class="demo">Develop Faster with Google Container Tools</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <div id="recap">
-    <h1><em>Skaffold</em><br/>gives you very quick feedback</h1>
-    <h1><em>Cloud Build</em><br/>manages your builds</h1>
-    <h1><em>Deployment Pipelines</em><br/>deploy your app on each commit</h1>
+    <h1><em>Skaffold</em><br/>Gives you very quick feedback</h1>
+    <h1><em>Jib</em><br/>Builds Java applications Quicly and Effortlessly</h1>
+    <h1><em>Cloud Build</em><br/>Manages your builds and deployments</h1>
 </div>
 
 ---
