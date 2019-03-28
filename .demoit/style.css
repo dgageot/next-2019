@@ -207,6 +207,19 @@ h2 em, h3 em {
     width: 5.4vw;
 }
 
+#pipeline {
+    position: absolute;
+    top: 40%;
+    left: 3.5vw;
+    width: 50%;
+}
+
+#pipeline-cloudbuild {
+    position: absolute;
+    left: 4vw;
+    top: 30%;
+}
+
 #google-cloud {
     position: absolute;
     bottom: 2.5vw;
