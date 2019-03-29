@@ -12,5 +12,5 @@ kubectl get pods
 skaffold run --tail
 skaffold init -f skaffold.yaml
 skaffold build -p cloud-build
-./mvnw compile
+./mvnw package
 ./mvnw compile jib:build -Dimage=gcr.io/dga-demo/hello-jib

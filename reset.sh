@@ -17,12 +17,12 @@ kubectl get pods
 cd ..
 
 cd java
-./mvnw compile
+./mvnw package
 docker build . -t web
 cd ..
 
 cd jib
-./mvnw compile
+./mvnw package
 ./mvnw compile jib:build -Dimage=gcr.io/dga-demo/hello-jib
 kctx docker-for-desktop
 skaffold build
