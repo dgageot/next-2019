@@ -412,11 +412,10 @@ customElements.define('web-term', class extends HTMLElement {
 }
 
 iframe {
-    width: 100%;
-    height: 250px;
+    width: calc(100% + 1px);
+    height: 100%;
 	margin-bottom: 20px;
 	border: none;
-    height: 100%;
 }
 
 .browser {
@@ -428,7 +427,7 @@ iframe {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0.25em 0.9em -0.1em rgba(0,0,0,.2);
-    width: calc(100% - 10px);
+    width: calc(100% - 11px);
     height: calc(100% - 40px);
     background-color: rgb(11,40,50);
 }

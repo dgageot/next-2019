@@ -2,7 +2,7 @@
 <img id="cloud" src="/images/cloud.png" />
 <img id="google-cloud" src="/images/google-cloud.png" />
 
-<div id="title">
+<div id="title-main">
     <h1>Develop Faster<br/>on Kubernetes<br/>with Google Container Tools<br/>and Cloud Build</h1>
     <h3>David Gageot <em>- Staff Developer Advocate, Google</em></h3>
     <h3>Priya Wadhwa <em>- Software Engineer, Google</em></h3>
@@ -27,7 +27,7 @@
 
 <div id="title">
     <h1>About Priya</h1>
-    <h2>Software Engineer on<br/>Google Cloud Platform</h2>
+    <h2>Software Engineer<br/>on Google Cloud Platform</h2>
     <h2>Dog Lover</h2>
     <h2 class="social"><img src="/images/social/twitter.svg"/><a href="https://twitter.com/priyawadhwa16">@priyawadhwa16</a></h2>
     <h2 class="social"><img src="/images/social/github.svg"/><a href="https://github.com/priyawadhwa">@priyawadhwa</a></h2>
@@ -39,7 +39,7 @@
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <div id="title">
-    <h1>Being a<br/>developer in a<br/>Kubernetes world</h1>
+    <h1>Being a<br/>developer in a<br/>Kubernetes<br/>world</h1>
 </div>
 
 ---
@@ -50,7 +50,7 @@
 
 ---
 
-<h1 class="demo">Deploy code to Kubernetes</h1>
+<h1 class="demo">Deploy to Kubernetes</h1>
 <img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
 
 <div class="split">
@@ -64,27 +64,41 @@
 
 ---
 
-<h1 class="demo">Infinite loop of Pain and Suffering</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
-<img id="left" src="/images/cycle.svg"/>
+<img id="snapshot" src="/images/cycle.svg" />
+<div id="separator"></div>
 
-<div id="description">
-    <h1>Even<br/><em>"Hello, World!"</em><br/>is <em>complicated</em>...</h1>
+<div id="related">
+    <h1>Infinite loop of Pain and Suffering</h1>
+    <h2>Even <em>"Hello, World!"</em> is <em>complicated!</em></h2>
+    <h2>People solve that with <em>bash</em> scripts and <em>Makefiles</em></h2>
 </div>
+
+<style>
+    #snapshot {
+        width: 65%;
+        top: 15%;
+    }
+</style>
 
 ---
 
-<h1 class="demo">Skaffold to the rescue!</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <img id="snapshot" src="/images/snapshots/skaffold.png"/>
+<div id="separator"></div>
 
-<div id="description">
-    <h1>Command line</h1>
-    <h1><em>Iterative</em><br/>development</h1>
-    <h1><em>Local</em> and <em>Remote</em> clusters</h1>
+<div id="related">
+    <h1>Skaffold to the rescue!</h1>
+    <h2>Command line</h2>
+    <h2><em>Iterative</em> development</h2>
+    <h2><em>Local</em> and <em>Remote</em> clusters</h2>
+    <h2><em>Open Source</em></h2>
 </div>
+
+<img id="qr" src="/images/qr-codes/skaffold.png" />
+<a id="url" href="https://skaffold.dev">skaffold.dev</a>
 
 ---
 
@@ -111,16 +125,21 @@
 
 ---
 
-<h1 class="demo">Jib - Java Image Builder</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <img id="snapshot" src="/images/snapshots/jib.png"/>
+<div id="separator"></div>
 
-<div id="description">
-    <h1><em>Maven</em> and <em>Gradle</em> plugin</h1>
-    <h1>Builds Docker images <em>without</em> Docker</h1>
-    <h1>No <em>Dockerfile</em></h1>
+<div id="related">
+    <h1>Jib<br/>(Java Image Builder)</h1>
+    <h2><em>Maven</em> and <em>Gradle</em> plugin</h2>
+    <h2>Builds Docker images <em>without</em> Docker</h2>
+    <h2>No <em>Dockerfile</em></h2>
+    <h2><em>Incremental</em> builds</h2>
 </div>
+
+<img id="qr" src="/images/qr-codes/jib.png" />
+<a id="url" href="https://github.com/GoogleContainerTools/jib">github.com/GoogleContainerTools/jib</a>
 
 ---
 
@@ -178,21 +197,36 @@
 
 ---
 
-<h1 class="demo">That's Skaffold!</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
-<img id="back" src="/images/back.svg">
-<img id="center" src="/images/plugins.svg">
+<img id="snapshot" src="/images/tight-loop.svg"/>
+<div id="separator"></div>
 
-<script src="/js/draw.js"></script>
+<div id="related">
+    <h1>That's Skaffold!</h1>
+    <h2>Tight <em>Feedback</em> Loop</h2>
+    <h2><em>Local</em> and <em>Remote</em> clusters</h2>
+    <h2><em>Try it</em> on <em>Monday!</em></h2>
+</div>
+
+<img id="qr" src="/images/qr-codes/skaffold.png" />
+<a id="url" href="https://skaffold.dev">skaffold.dev</a>
+
+<style>
+    #snapshot {
+        width: 65%;
+        top: 15%;
+        left: -5%;;
+    }
+</style>
 
 ---
 
 <img id="number" src="/images/numbers/02.svg" />
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
-<div id="title">
-    <h1>Skaffold<br/>in your IDE</h1>
+<div id="title-low">
+    <h1>Can it be<br/>even easier?</h1>
 </div>
 
 ---
@@ -200,67 +234,101 @@
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <div id="long">
-    <h1>Cloud Code for IDEs</h1>
-    <h2>“Building highly scalable applications using Kubernetes is hard, Google Cloud Code extends your IDE letting you spend less time learning about the tool chain, configuration and management of your app - giving you more time to focus on writing and evolving your code.”</h2>
+    <h1>Introducing Cloud Code!</h1>
+    <h2>“Building <em>highly scalable</em> applications with Kubernetes can be hard,
+        Google Cloud Code extends your IDE so that you can continuously <em>deploy</em>
+        to a cluster, and <em>edit/debug</em> just like you were working with
+        <em>local code</em>.”</h2>
 </div>
+
+<img id="cloud-code" src="/images/cloud-code.png" />
+
+<style>
+    #cloud-code {
+        position: absolute;
+        bottom: 2vw;
+        right: 2vw;
+        width: 30vw;
+    }
+</style>
 
 ---
 
-<h1 class="demo">Cloud Code for VS Code</h1>
-<img id="google-cloud-full-top" src="/images/google-cloud-full.png" />
+<h1 class="demo">Cloud Code for Visual Studio Code</h1>
 
-<div class="split">
-    <web-term path="{{ .WorkingDir }}/hexagons"></web-term>
-    <web-browser src="http://localhost:8080/"></web-browser>
+<div id="dark">
+    <h1 id="title-main">Cloud Code<br/>for Visual Studio Code</h1>
 </div>
+
+<img id="google-cloud-full" src="/images/google-cloud-full.png" />
+<div id="google-cloud-text">Google_logo Cloud</div>
+
+<style>
+    #title {
+        width: 100%;
+    }
+</style>
 
 ---
 
-<h1 class="demo">That's Cloud Code for VS Code!</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <img id="snapshot" src="/images/snapshots/cloud-code.png"/>
+<div id="separator"></div>
 
-<div id="description">
-    <h1><em>Continuous</em> deployment</h1>
-    <h1>One click <em>Debugging</em></h1>
-    <h1><em>skaffold.yaml</em> validation</h1>
+<div id="related">
+    <h1>Cloud Code<br/>for Visual Studio Code</h1>
+    <h2><em>Continuous</em> deployment</h2>
+    <h2>One click <em>Debugging</em></h2>
+    <h2>Yaml <em>manifests</em> validation</h2>
+    <h2>And <em>more!</em></h2>
 </div>
+
+<img id="qr" src="/images/qr-codes/cloud-code.png" />
+<a id="url" href="https://cloud.google.com/code">cloud.google.com/code</a>
 
 ---
 
-<h1 class="demo">And Cloud Code for IntelliJ</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <img id="snapshot" src="/images/snapshots/cloud-code-intellij.png"/>
+<div id="separator"></div>
 
-<div id="description">
-    <h1><em>Easy</em> development<br/>for Kubernetes</h1>
-    <h1><em>Skaffold</em> inside</h1>
-    <h1>You focus on<br/><em> code</em></h1>
+<div id="related">
+    <h1>Cloud Code<br/>for IntelliJ</h1>
+    <h2><em>Easy</em> development for Kubernetes</h2>
+    <h2><em>Skaffold</em> inside</h2>
+    <h2>You focus on <em>code!</em></h2>
 </div>
+
+<img id="qr" src="/images/qr-codes/cloud-code.png" />
+<a id="url" href="https://cloud.google.com/code">cloud.google.com/code</a>
 
 ---
 
 <img id="number" src="/images/numbers/03.svg" />
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
-<div id="title">
+<div id="title-low">
     <h1>Build with the<br/>Cloud</h1>
 </div>
 
 ---
 
-<h1 class="demo">Cloud Build</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <img id="snapshot" src="/images/snapshots/gcb.png"/>
+<div id="separator"></div>
 
-<div id="description">
-    <h1>Fully <em>managed</em> CI/CD</h1>
-    <h1>Extremely <em>fast</em> builds</h1>
-    <h1>Automate your <em>deployments</em></h1>
+<div id="related">
+    <h1>Cloud Build</h1>
+    <h2>Fully <em>managed</em> CI/CD</h2>
+    <h2>Extremely <em>fast</em> builds</h2>
+    <h2>Automate your <em>deployments</em></h2>
 </div>
+
+<img id="qr" src="/images/qr-codes/cloud-build.png" />
+<a id="url" href="https://cloud.google.com/cloud-build/">cloud.google.com/cloud-build</a>
 
 ---
 
@@ -325,36 +393,41 @@
 
 ---
 
-<h1 class="demo">That's Cloud Build with Skaffold!</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <img id="snapshot" src="/images/snapshots/gcb.png"/>
+<div id="separator"></div>
 
-<div id="description">
-    <h1>Builds artifacts<br/>in <em>parallel</em></h1>
-    <h1>Smart <em>caching</em></h1>
-    <h1>No additional<br/><em>yaml config</em> file</h1>
+<div id="related">
+    <h1>Cloud Build with Skaffold</h1>
+    <h2>Builds artifacts in <em>parallel</em></h2>
+    <h2>Smart <em>caching</em></h2>
+    <h2>No additional <em>yaml config</em> file</h2>
 </div>
+
+<img id="qr" src="/images/qr-codes/cloud-build.png" />
+<a id="url" href="https://cloud.google.com/cloud-build/">cloud.google.com/cloud-build</a>
 
 ---
 
 <img id="number" src="/images/numbers/04.svg" />
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
-<div id="title">
+<div id="title-low">
     <h1>Continuous<br/>Deployment<br/>Pipeline</h1>
 </div>
 
 ---
 
-<h1 class="demo">Continuous Deployment Pipeline</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <img id="pipeline" src="/images/deployment-pipeline.png" />
+<div id="separator"></div>
 
-<div id="description">
-    <h1><em>Merge</em> code changes to Github</h1>        
-    <h1>Deploy applications with <em>Skaffold</em> and <em>Google Cloud Build</em></h1>
+<div id="related">
+    <h1>Continuous Deployment Pipeline</h1>
+    <h2><em>Merge</em> code changes to Github</h2>        
+    <h2>Deploy applications with <em>Skaffold</em><br/>and <em>Google Cloud Build</em></h2>
 </div>
 
 ---
@@ -387,26 +460,58 @@
 <img id="number" src="/images/numbers/05.svg" />
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
-<div id="title">
+<div id="title-low">
     <h1>Recap</h1>
 </div>
 
 ---
 
-<h1 class="demo">Develop Faster with Google Container Tools</h1>
+<h1 class="demo">Develop Faster<br/>with Google Container Tools</h1>
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
 <div id="recap">
-    <h1><em>Skaffold</em><br/>Gives you very quick feedback</h1>
-    <h1><em>Jib</em><br/>Builds Java applications quickly and effortlessly</h1>
-    <h1><em>Cloud Build</em><br/>Manages your builds and deployments</h1>
+    <div>
+        <h1>Skaffold</h1>
+        <h2>Gives you a<br/>tight feedback loop</h2>
+    </div>
+    <div>
+        <h1 style="color: var(--color-green);">Jib</h1>
+        <h2>Builds Java applications<br/>quickly and effortlessly</h2>
+    </div>
+    <div>
+        <h1 style="color: var(--color-red);">Cloud Code</h1>
+        <h2>Lets you focus<br/>on your code</h2>
+    </div>
+    <div>
+        <h1 style="color: var(--color-yellow);">Cloud Build</h1>
+        <h2>Manages your builds<br/>and deployments</h2>
+    </div>
 </div>
+
+<style>
+    #recap {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        height: calc(100% - 25vw);
+        margin: 0;
+    }
+
+    #recap h2 {
+        font-size: 2.3vw;
+        line-height: 2.5vw;
+    }
+
+    #recap h1 {
+        color: var(--color-blue);
+    }
+</style>
 
 ---
 
 <img id="google-cloud-full" src="/images/google-cloud-full.png" />
 
-<div id="title">
+<div id="title-low">
     <h1>Thank you!</h1>
     <h2>Google_logo Cloud Next 2019</h2>
     <h3 class="space">David Gageot</h3>
@@ -415,10 +520,18 @@
     <h3><a href="priyawadhwa@google.com">priyawadhwa@google.com</a></h3>
 </div>
 
+<div id="separator"></div>
+
 <div id="related">
-    <h1>Related Talks:</h1>
+    <h1>Related Talks</h1>
     <h2 class="space">Build Solutions With Serverless on Kubernetes Engine</h2>
     <h3>April 10th @ 12:35 AM</h3>
     <h2 class="space">Google Cloud DevOps: Speed With Reliability and Security</h2>
     <h3>April 11th @ 9:00 AM</h3>
 </div>
+
+<style>
+    #separator {
+        left: 50%;
+    }
+</style>
