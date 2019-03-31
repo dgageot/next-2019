@@ -14,7 +14,7 @@ public class Title {
             HttpServerResponse response = routingContext.response();
 
             response.putHeader("content-type", "text/plain");
-            response.end("GCP Quizz");
+            response.end("Google Cloud Quizz");
         });
 
         HttpServer server = vertx.createHttpServer();

@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'Google Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Google Sans Italic'), local('GoogleSans-Italic'), url(/fonts/4UaErENHsxJlGDuGo1OIlL3L8pxULilENlY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Google Sans Medium Italic'), local('GoogleSans-MediumItalic'), url(/fonts/4UaZrENHsxJlGDuGo1OIlL3L-m93OwRmO3wq9Io.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Google Sans Bold Italic'), local('GoogleSans-BoldItalic'), url(/fonts/4UaZrENHsxJlGDuGo1OIlL3L-idxOwRmO3wq9Io.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Google Sans Regular'), local('GoogleSans-Regular'), url(/fonts/4UaGrENHsxJlGDuGo1OIlL3Owp5eKQtG.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Google Sans Medium'), local('GoogleSans-Medium'), url(/fonts/4UabrENHsxJlGDuGo1OIlLU94YtzCwZsPF4o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Google Sans Bold'), local('GoogleSans-Bold'), url(/fonts/4UabrENHsxJlGDuGo1OIlLV154tzCwZsPF4o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
 body, html {
   padding: 0;
   margin: 0;
@@ -6,84 +54,36 @@ body, html {
 body {
   background-color: rgb(70, 70, 70);
   color: white;
-  font-family: Arial, Helvetica, sans-serif
-}
-
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
-}
-
-.quizz {
-  text-align: center;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
 }
 
 a {
   color: white;
 }
 
-.title {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 1.4rem;
+h1 {
+  margin: 2vw;
+  font-size: 2.6vw;
 }
 
-.nav {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.4rem;
+h2 {
+  font-size: 3.2vw;
+  margin: 0;
+  font-weight: 400;
 }
 
-.nav-link {
-  padding: 0 5px;
+h3, .or {
+  font-size: 2.6vw;
+  margin: 0;
+  font-weight: 400;
 }
 
-.question {
-  margin-top: 110px;
-}
-
-.question h2 {
-  font-size: 2rem;
-}
-
-.question h3 {
-  font-size: 3rem;
-  margin-top: 0;
-}
-
-.choices, .error {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.error {
-  display: block;
-  color: #f97b7b;
-  font-size: 2rem;
+.quizz {
   text-align: center;
 }
 
-.hexagon {
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .hexagon img {
-  width: 100%;
-  height: 100%;
-}
-
-.or {
-  position: relative;
-  width: 120px;
-  min-width: 120px;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
+  width: 28vw;
 }
 
 .correct {
@@ -94,12 +94,28 @@ a {
   color: red;
 }
 
-.result {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.choices {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  margin: 4vw 10vw;
 }
 
-.result a {
-  font-size: 1.2rem;
+.or {
+  display: grid;
+  grid-template-rows: 50% 50%;
 }
+
+.or span {
+  align-self: end;
+  margin-bottom: 2vw;
+}
+
+.result {
+  margin-top: 2vw;
+  align-self: center;
+}
+
+.solution {
+  min-height: 10vw;
+}
+

@@ -33,7 +33,7 @@ VALUES  ('compute-engine.svg', 'Compute', 'Compute Engine', 'Virtual Machines, D
         ('cloud-translation-api.svg', 'Cloud AI', 'Cloud Translation API', 'Language Detection and Translation', 'https://cloud.google.com/translate/'),
         ('cloud-vision-api.svg', 'Cloud AI', 'Cloud Vision API', 'Image Recognition and Classification', 'https://cloud.google.com/vision/'),
         ('cloud-video-intelligence-api.svg', 'Cloud AI', 'Cloud Video Intelligence', 'Scene-level Video Annotation', 'https://cloud.google.com/video-intelligence/'),
-        ('cloud-virtual-network.svg', 'Networking', 'Cirtual Private Cloud (VPC)', 'Software Defined Networking', 'https://cloud.google.com/vpc/'),
+        ('cloud-virtual-network.svg', 'Networking', 'Virtual Private Cloud (VPC)', 'Software Defined Networking', 'https://cloud.google.com/vpc/'),
         ('cloud-load-balancing.svg', 'Networking', 'Cloud Load Balancing', 'Multi-region Load Distribution', 'https://cloud.google.com/load-balancing/'),
         ('cloud-cdn.svg', 'Networking', 'Cloud CDN', 'Content Delivery Network', 'https://cloud.google.com/cdn/'),
         ('cloud-interconnect.svg', 'Networking', 'Cloud Interconnect', 'Peer with GCP', 'https://cloud.google.com/interconnect/'),

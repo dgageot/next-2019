@@ -9,9 +9,7 @@
 </head>
 
 <body ng-app="quizz" ng-controller="QuizzCtrl" ng-cloak>
-  <div class="title">
-    {{title}}!<br>
-  </div>
+  <h1>{{title}}</h1>
 
   <div class="quizz">
     <div class="question">
@@ -31,7 +29,7 @@
         <a href="" ng-click="playLeft()">
           <img ng-src="/images/{{candidate1.image}}" alt="{{candidate1.name}}">
         </a>
-        <h3><span ng-if="playAgain">{{candidate1.name}}</span></h3>
+        <h3 class="solution"><span ng-if="playAgain">{{candidate1.name}}</span></h3>
       </div>
 
       <div class="or">
@@ -48,7 +46,7 @@
         <a href="" ng-click="playRight()">
           <img ng-src="/images/{{candidate2.image}}" alt="{{candidate2.name}}">
         </a>
-        <h3><span ng-if="playAgain">{{candidate2.name}}</span></h3>
+        <h3 class="solution"><span ng-if="playAgain">{{candidate2.name}}</span></h3>
       </div>
     </div>
 
